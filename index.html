@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Unofficial Free VATSIM Resources — vACC Sub-domains and more!</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="title" content="Unofficial Free VATSIM Resources — vACC Sub-domains and more!">
+    <meta name="description" content="VATSIM.EU.ORG is a free voluntary service providing unofficial free subdomains to VATSIM vACCs and resources related to VATSIM.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vatsim.eu.org/">
+    <meta property="og:title" content="Unofficial Free VATSIM Resources — vACC Sub-domains and more!">
+    <meta property="og:description" content="VATSIM.EU.ORG is a free voluntary service providing unofficial free subdomains to VATSIM vACCs and resources related to VATSIM.">
+    <meta property="og:image" content="/VATSIM_Unofficial_Meta.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vatsim.eu.org/">
+    <meta property="twitter:title" content="Unofficial Free VATSIM Resources — vACC Sub-domains and more!">
+    <meta property="twitter:description" content="VATSIM.EU.ORG is a free voluntary service providing unofficial free subdomains to VATSIM vACCs and resources related to VATSIM.">
+    <meta property="twitter:image" content="/VATSIM_Unofficial_Meta.png">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vatsim: {
+                            indigo:'#2B3990',
+                            blue:'#2483C5',
+                            green:'#29B473',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            html {
+                font-family: Ubuntu, Urbanist, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+            a {
+                @apply underline bg-clip-text bg-gradient-to-r from-vatsim-blue to-vatsim-green
+            }
+            li:not(:first-child) {
+                @apply mt-2
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col bg-white text-vatsim-indigo">
+    <section class="container mx-auto py-8 px-4">
+        <img src="/VATSIM_Logo_Official_500px.png" class="w-48"/>
+        <h1 class="mt-8 text-4xl font-bold">Unofficial Free VATSIM Resources</h1>
+        <p class="mt-8">Are you a VATSIM vACC (Virtual Area Control Center) looking for a free sub-domain to host your organization website? To make things perfect, we can provide you with a free and sleek URL like one of these below (P.S. If you have an existing domain, we can still point a subdomain to your server for free, and you can redirect it to your existing site as well!):</p>
+        <p class="mt-8 inline-block p-3 text-2xl bg-vatsim-indigo text-white">https://<span class="typed-domain"></span>.vatsim.eu.org</p>
+        <p></p>
+        <p class="mt-8">You can simply follow the steps below to prove that you are <span class="p-1 bg-vatsim-indigo text-white">the director/deputy director/web services manager of your vACC</span> to claim a VATSIM.EU.ORG subdomain for your vACC website for free:</p>
+        
+        <h2 class="mt-8 text-2xl font-bold">Verification</h2>
+        <ol class="mt-4">
+            <li>1. Determine your VATSIM.EU.ORG subdomain: use the ISO 3166-1 alpha-2 code of your vACC or with the name of web service (either jp.vatsim.eu.org or helpdesk.jp.vatsim.eu.org would be possible).</li>
+            <li>2. Send us your desired domain and a valid proof of your position in your vACC, for example send us an email with an URL to your vACC staff list from your vACC domain with your name in the address, and we will reply to tell you your eligibility shortly (In the future if this project goes well, we will be applying for and implementing OAuth SSO from VATSIM to speed up the process)</li>
+        </ol>
+
+        <h2 class="mt-8 text-2xl font-bold">Setup (Custom Server)</h2>
+        <ol class="mt-4">
+            <li>1. Send us another email to inform us that the server ip of the web server you are using, with the eligible subdomain you previously set up in step 2, from the email address you applied with. After receiving a success email response, your new URL should go live within a few hours.</li>
+        </ol>
+
+        <h2 class="mt-8 text-2xl font-bold">Setup (GitHub Pages)</h2>
+        <ol class="mt-4">
+            <li>1. Create/log in to your GitHub account and set up your GitHub Page by following the instructions <a href="https://pages.github.com/">here</a>. To get a head start you can simply use the generator with one of the provided themes and add some relevant content to your new page.</li>
+            <li>2. Add a file named CNAME to your repo (in the gh-pages branch for project pages) with a single line matching the domain you are eligible to apply for (e.g. jp.vatsim.eu.org). If you prefer committing via a web interface, have a look at <a href="https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/">GitHub Pages Help</a>.</li>
+            <li>3. Send us another email to inform us that you are using GitHub Pages, with the eligible subdomain you previously set up in step 2, from the email address you applied with. After receiving a success email response, your new URL should go live within a few hours.</li>
+        </ol>
+        
+        <p class="mt-8">
+            This project has no relation with the European Union despite the domain name, and is in no way affiliated with VATSIM. This is entirely voluntary and use at your own risk.<br/>
+            In addition, we invite you to sign the petition at <a href="https://savedotorg.org/">savedotorg.org</a> against the sale of the .ORG registry (TLD) to a private fund.<br/>
+            If you have any inquiries, contact us anytime at <a href="mailto:admin@vatsim.eu.org">admin@vatsim.eu.org</a>.
+        </p>
+        <p class="mt-8">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms" class="ml-4">Terms of Service</a>
+        </p>
+        
+        <p class="mt-8">
+            © 2022 VATSIM.EU.ORG (Unofficial Free VATSIM Resources), All Rights Reserved.<br />
+            THE VATSIM NAME AND ALL LOGOS, TRADEMARKS AND/OR SERVICE MARKS © 2001 - 2009 VATSIM, All Rights Reserved.
+        </p>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.typed-domain', {
+            strings: ['hk', 'charts.jp', 'helpdesk.kr', 'events.sg', 'helpdesk.de'],
+            typeSpeed: 100,
+            backDelay: 2000,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
